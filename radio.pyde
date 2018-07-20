@@ -1,0 +1,51 @@
+def setup():
+    size(600,400)
+    background("#CEC8CE")
+    
+def draw():
+    fill("#48230D")
+    rect(175,125,250,150)
+    fill("#A5999F5")
+    rect(200,300,200,75)
+    fill("#0A0402")
+    textSize(25)
+    station = text("00:""01:""02:",210,350)
+    text("00:""01:""02:""03:""04", 210,350)
+    fill("#69626A")
+    ellipse(550,350,100,100)
+    fill(0)
+    textSize(75)
+    text("RADIO",185,200)
+    if mousePressed and (mouseButton==LEFT):
+        if mouseX >=500 and mouseY >=300:
+             fill("#48230D")
+             rect(175,125,250,150)
+             fill(0)
+             textSize(60)
+             text("Song 0",190,200)
+             fill("#A5999F5")
+             rect(200,300,200,75)
+             fill(0)
+             text("00",270,360)
+    elif mousePressed and (mouseButton==RIGHT):
+        if mouseX >=500 and mouseY >=300:
+            fill("#48230D")
+            rect(175,125,250,150)
+            fill(0)
+            textSize(60)
+            text("Song 1",190,200)
+            fill("#A5999F5")
+            rect(200,300,200,75)
+            fill(0)
+            text("01",270,360)
+    elif mousePressed and (mouseButton==CENTER):
+        if mouseX >=500 and mouseY >=300:
+            fill("#48230D")
+            rect(175,125,250,150)
+            fill(0)
+            textSize(60)
+            text("Song 2",190,200)
+            fill("#A5999F5")
+            rect(200,300,200,75)
+            fill(0)
+            text("02",270,360)
